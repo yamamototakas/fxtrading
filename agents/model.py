@@ -118,3 +118,15 @@ class Estimator(Model):
             self.trade_data: data,
             self.keep_prob: 1
         }
+
+def main():
+
+    loader = TradeResultsLoader()
+    data = TradeResults(loader.retrieve_trade_data())
+
+    with Trainer() as trainer:
+        trainer.train(10001, data)
+        trainer.save("./model.ckpt")
+
+if __name__ == '__main__':
+    main()
