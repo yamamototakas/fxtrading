@@ -11,3 +11,4 @@ mydata.json
 draw_test
 .ipynb_checkpoints
 lib
+*.log
