@@ -25,7 +25,7 @@ class MyStreamer(oandapy.Streamer):
 
 
 def main():
-    my_data = mydata.readAccountinfo()
+    my_data = mydata.readAccountinfo("mydata.json")
     oanda = oandapy.API(environment=my_data["jp"]["environment"],
                         access_token=my_data["jp"]["token"])
 
