@@ -9,4 +9,3 @@ data = TradeResults(loader.retrieve_trade_data())
 with Trainer() as trainer:
     trainer.train(10001, data)
     trainer.save("./model.ckpt")
-    

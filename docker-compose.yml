@@ -8,7 +8,7 @@ jiji:
     # サーバー内部で秘匿データの暗号化に使うキー
     # 必ず変更して使用してください。
     # UIから入力を求められることはないので、任意の長い文字列を使用すればOKです。
-    USER_SECRET: d41d8cd98f00b204e9800998ecf8427e
+    USER_SECRET: d41d8cd98f00b204e9800998ecf8427etest
 
 mongodb:
   container_name: jiji_example__mongodb
